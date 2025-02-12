@@ -1,55 +1,96 @@
 .explore-menu {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-.explore-menu h1{
-    font-weight: 500;
-    color: #262626;
+.explore-menu h1 {
+  font-weight: 500;
+  color: #262626;
 }
 .explore-menu-text {
-    max-width: 60%;
-    color: #808080;
+  max-width: 60%;
+  color: #808080;
 }
 .explore-menu-list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-    text-align: center;
-    margin: 20px 0px;
-    overflow-x: scroll;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+  margin: 20px 0px;
+  overflow-x: scroll;
 }
-.explore-menu-list::-webkit-scrollbar{
-    display: none;
+.explore-menu-list::-webkit-scrollbar {
+  display: none;
 }
 .explore-menu-list img {
-    min-height: 80px;
-    width: 7.5vw;
-    cursor: pointer;
-    border-radius: 50%;
-    transition: 0.2s;
+  min-height: 80px;
+  width: 7.5vw;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.2s;
 }
-.explore-menu-list p{
-    margin-top: 10px;
-    color: #747474;
-    font-size: max(1.4vw,16px);
-    cursor: pointer;
+.explore-menu-list p {
+  margin-top: 10px;
+  color: #747474;
+  font-size: max(1.4vw, 16px);
+  cursor: pointer;
 }
-.explore-menu hr{
-    margin: 10px 0px;
-    height: 2px;
-    background-color: #e2e2e2;
-    border: none;
+.explore-menu hr {
+  margin: 10px 0px;
+  height: 2px;
+  background-color: #e2e2e2;
+  border: none;
 }
 .explore-menu-list-item .active {
-    border: 4px solid tomato;
-    padding: 2px;
+  border: 4px solid tomato;
+  padding: 2px;
 }
 
-@media (max-widt:1050px) {
-    .explore-menu-text{
-        max-width: 100%;
-        font-size: 14px;
-    }
+@media (max-widt: 1050px) {
+  .explore-menu-text {
+    max-width: 100%;
+    font-size: 14px;
+  }
 }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1050px) {
+  .explore-menu-text {
+    max-width: 100%; /* Full width for smaller screens */
+    font-size: 14px; /* Smaller font size */
+  }
+
+  .explore-menu-list img {
+    width: 10vw; /* Adjust image size */
+  }
+}
+
+@media (max-width: 768px) {
+  .explore-menu-list {
+    gap: 20px; /* Reduce gap between items */
+  }
+
+  .explore-menu-list img {
+    width: 15vw; /* Larger images for better visibility */
+  }
+
+  .explore-menu-list p {
+    font-size: 14px; /* Smaller font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .explore-menu-list {
+    gap: 10px; /* Further reduce gap */
+  }
+
+  .explore-menu-list img {
+    width: 20vw; /* Larger images for mobile */
+  }
+
+  .explore-menu-list p {
+    font-size: 12px; /* Smaller font size */
+  }
+}
+

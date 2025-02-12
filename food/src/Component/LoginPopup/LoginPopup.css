@@ -63,3 +63,35 @@
     font-weight: 500;
     cursor: pointer;
 }
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .login-popup-container {
+        width: max(30vw, 280px); /* Adjust width for smaller screens */
+        padding: 20px 25px; /* Adjust padding */
+    }
+
+    .login-popup-inputs input {
+        padding: 8px; /* Adjust input padding */
+    }
+
+    .login-popup-container button {
+        padding: 8px; /* Adjust button padding */
+        font-size: 14px; /* Adjust font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .login-popup-container {
+        width: max(40vw, 250px); /* Adjust width for very small screens */
+        padding: 15px 20px; /* Adjust padding */
+    }
+
+    .login-popup-inputs input {
+        padding: 6px; /* Adjust input padding */
+    }
+
+    .login-popup-container button {
+        padding: 6px; /* Adjust button padding */
+        font-size: 12px; /* Adjust font size */
+    }
+}

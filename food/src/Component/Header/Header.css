@@ -35,7 +35,7 @@
     font-size: max(1vw);
 }
 
-@media (max-width:1050) {
+/* @media (max-width:1050) {
     .header-content{
         max-width: 45%;
     }
@@ -49,5 +49,54 @@
     }
     .header-content button{
         padding: 2vw 4vw;
+    }
+} */
+/* Media Queries for Responsiveness */
+@media (max-width: 1050px) {
+    .header-content {
+        max-width: 45%; /* Adjust width for smaller screens */
+    }
+
+    .header-content h2 {
+        font-size: max(5vw, 22px); /* Adjust font size */
+    }
+
+    .header-content p {
+        font-size: 1.2vw; /* Adjust font size */
+    }
+}
+
+@media (max-width: 750px) {
+    .header-content {
+        max-width: 65%; /* Adjust width for mobile */
+    }
+
+    .header-content p {
+        display: none; /* Hide paragraph on small screens */
+    }
+
+    .header-content button {
+        padding: 2vw 4vw; /* Adjust button padding */
+        font-size: max(2vw, 14px); /* Adjust font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        height: 50vw; /* Adjust height for very small screens */
+    }
+
+    .header-content {
+        max-width: 80%; /* Adjust width for very small screens */
+        bottom: 5%; /* Adjust position */
+    }
+
+    .header-content h2 {
+        font-size: max(6vw, 18px); /* Adjust font size */
+    }
+
+    .header-content button {
+        padding: 3vw 6vw; /* Adjust button padding */
+        font-size: max(3vw, 12px); /* Adjust font size */
     }
 }

@@ -35,3 +35,55 @@
 .place-order-right .checkout-button {
     margin-top: 30px;
 }
+/* Media Queries for Responsiveness */
+@media (max-width: 1050px) {
+    .place-order {
+        flex-direction: column; /* Stack left and right sections vertically */
+        gap: 30px;
+    }
+
+    .place-order-left,
+    .place-order-right {
+        max-width: 100%; /* Full width for smaller screens */
+    }
+
+    .place-order-left .title {
+        font-size: 24px; /* Adjust font size */
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 750px) {
+    .place-order-left .title {
+        font-size: 20px; /* Smaller font size */
+        margin-bottom: 20px;
+    }
+
+    .place-order-left input {
+        padding: 6px; /* Adjust input padding */
+    }
+
+    .place-order-left .multi-fields {
+        flex-direction: column; /* Stack fields vertically */
+        gap: 15px;
+    }
+
+    .place-order-right .checkout-button {
+        width: 100%; /* Full width button */
+        padding: 10px; /* Adjust padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .place-order-left .title {
+        font-size: 18px; /* Smaller font size */
+    }
+
+    .place-order-left input {
+        font-size: 14px; /* Adjust input font size */
+    }
+
+    .place-order-right .checkout-button {
+        font-size: 14px; /* Adjust button font size */
+    }
+}

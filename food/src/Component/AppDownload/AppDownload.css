@@ -1,22 +1,50 @@
 .app-download {
-    margin: auto auto;
-    margin-top: 100px;
-    font-weight: 500;
-    text-align: center;
-    font-size: max(3vw, 20px);
+  margin: auto auto;
+  margin-top: 100px;
+  font-weight: 500;
+  text-align: center;
+  font-size: max(3vw, 20px);
 }
 .app-download-plateforms {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-    gap: max(2vw, 10px);
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  gap: max(2vw, 10px);
 }
 .app-download-plateforms img {
-    width: max(30vw, 120px);
-    max-width: 180px;
-    transition: 0.5s;
-    cursor: pointer;
+  width: max(30vw, 120px);
+  max-width: 180px;
+  transition: 0.5s;
+  cursor: pointer;
 }
 .app-download-plateforms img:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .app-download {
+    margin-top: 60px; /* Reduce margin for smaller screens */
+    font-size: max(4vw, 18px); /* Adjust font size */
+  }
+
+  .app-download-plateforms img {
+    width: max(40vw, 100px); /* Adjust image size */
+  }
+}
+
+@media (max-width: 480px) {
+  .app-download {
+    margin-top: 40px; /* Further reduce margin */
+    font-size: max(5vw, 16px); /* Smaller font size */
+  }
+
+  .app-download-plateforms {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 20px; /* Add spacing between buttons */
+  }
+
+  .app-download-plateforms img {
+    width: 60%; /* Make buttons smaller */
+  }
 }
