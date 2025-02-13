@@ -1,38 +1,38 @@
 .header {
-    height: 34vw;
-    margin: 30px auto;
-    background: url('/header_img.png') no-repeat;
-    background-size: contain;
-    position: relative;
+  height: 34vw;
+  margin: 30px auto;
+  background: url("/header_img.png") no-repeat;
+  background-size: contain;
+  position: relative;
 }
 .header-content {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 1.5vw;
-    max-width: 50%;
-    bottom: 10%;
-    left: 6vw;
-    animation: fadeIn 3s;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.5vw;
+  max-width: 50%;
+  bottom: 10%;
+  left: 6vw;
+  animation: fadeIn 3s;
 }
-.header-content h2{
-    font-weight: 500;
-    color: white;
-    font-size: max(4.5vw, 20px);
+.header-content h2 {
+  font-weight: 500;
+  color: white;
+  font-size: max(4.5vw, 20px);
 }
-.header-content p{
-    color: white;
-    font-size: 1vw;
+.header-content p {
+  color: white;
+  font-size: 1vw;
 }
-.header-content button{
-    border: none;
-    font-weight: 500;
-    color: #747474;
-    padding: 1vw 2.3vw;
-    border-radius: 50px;
-    background-color: white;
-    font-size: max(1vw);
+.header-content button {
+  border: none;
+  font-weight: 500;
+  color: #747474;
+  padding: 1vw 2.3vw;
+  border-radius: 50px;
+  background-color: white;
+  font-size: max(1vw);
 }
 
 /* @media (max-width:1050) {
@@ -53,50 +53,78 @@
 } */
 /* Media Queries for Responsiveness */
 @media (max-width: 1050px) {
-    .header-content {
-        max-width: 45%; /* Adjust width for smaller screens */
-    }
+  .header-content {
+    max-width: 45%; /* Adjust width for smaller screens */
+  }
 
-    .header-content h2 {
-        font-size: max(5vw, 22px); /* Adjust font size */
-    }
+  .header-content h2 {
+    /* font-size: max(5vw, 22px); */
+  }
 
-    .header-content p {
-        font-size: 1.2vw; /* Adjust font size */
-    }
+  .header-content p {
+    font-size: 1.2vw; /* Adjust font size */
+  }
 }
 
 @media (max-width: 750px) {
-    .header-content {
-        max-width: 65%; /* Adjust width for mobile */
-    }
+  .header-content {
+    max-width: 65%; /* Adjust width for mobile */
+  }
 
-    .header-content p {
-        display: none; /* Hide paragraph on small screens */
-    }
+  .header-content p {
+    display: none; /* Hide paragraph on small screens */
+  }
 
-    .header-content button {
-        padding: 2vw 4vw; /* Adjust button padding */
-        font-size: max(2vw, 14px); /* Adjust font size */
-    }
+  .header-content button {
+    padding: 2vw 4vw; /* Adjust button padding */
+    font-size: max(2vw, 14px); /* Adjust font size */
+  }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 320px) {
+  .header {
+    height: 120vw; /* Increase height to ensure content fits */
+    background-size: cover; /* Ensure the background image covers the entire header */
+  }
+
+  .header-content {
+    max-width: 100%; /* Increase width to give more space */
+    bottom: 10%; /* Adjust position to move content up */
+    gap: 10px; /* Reduce gap between elements */
+  }
+
+  .header-content h2 {
+    font-size: 6vw; /* Adjust font size to be smaller */
+    line-height: 1.2; /* Add line height to prevent text from overlapping */
+    margin-bottom: 10px; /* Add margin to separate from the paragraph */
+  }
+
+  .header-content p {
+    font-size: 4vw; /* Adjust paragraph font size */
+    display: block; /* Ensure the paragraph is visible */
+  }
+
+  .header-content button {
+    padding: 4px 10px; /* Adjust button padding */
+    font-size: 2vw; /* Adjust button font size */
+  }
+}
+/* @media (max-width: 320px) {
     .header {
-        height: 50vw; /* Adjust height for very small screens */
+        height: 80vw; 
     }
 
     .header-content {
-        max-width: 80%; /* Adjust width for very small screens */
-        bottom: 5%; /* Adjust position */
+        max-width: 80%;
+        bottom: 5%; 
     }
 
     .header-content h2 {
-        font-size: max(6vw, 18px); /* Adjust font size */
+        font-size: max(2vw, 6px); 
     }
 
     .header-content button {
-        padding: 3vw 6vw; /* Adjust button padding */
-        font-size: max(3vw, 12px); /* Adjust font size */
+        padding: 1vw 4vw; 
+        font-size: max(3vw, 12px);
     }
-}
+} */
